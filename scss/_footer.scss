@@ -1,0 +1,48 @@
+/* Estilo al footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 10px 100px;
+    justify-content: space-around;
+    padding: 10px;
+    background-color:$color-fondo;
+    color: $color-fuentes;
+  }
+  
+  .derechos-reservados {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  footer p {
+    &:before {
+      content: "|";
+      margin-right: 5px;
+    }
+  
+    &:after {
+      content: "|";
+      margin-left: 5px;
+    }
+  }
+  
+  .redes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer .redes .redes_img {
+    height: 30px;
+    width: 30px;
+  
+    // transciones de zoom y brillo
+    &:hover {
+      filter: brightness(75%);
+      box-shadow: 0 0 5px 2px #ccc;
+      height: 50px;
+      width: 50px;
+    }
+  }
+  

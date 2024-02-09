@@ -1,0 +1,36 @@
+/*  estilos paginas noticias */
+
+.noticias {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 154, 154);
+    color:$color-fuentes;
+    padding: 10px 05px;
+
+    h2{
+      color:$color-fuentes;
+      text-decoration: $subrayado;
+      padding-bottom: 25px;
+    }
+
+    h3{
+      color: $color-fuentes;
+      margin-bottom: 25px;
+    }
+    a {
+      @include anclas;
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      color: #2fb4cc;
+      border: 1px solid #2fb4cc;
+      border-radius: 4px;
+      transition: all 400ms ease;
+  
+      &:hover {
+        background: #295e68;
+        color: #FFf;
+      }
+    }
+  }

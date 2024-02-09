@@ -1,0 +1,173 @@
+/* Medias Queries */
+
+
+/* Medias Queries Aplicada a la pagina de inico */
+
+
+/* Dispositivos medios-grandes. */
+
+@media only screen and (max-width: 951px) {
+
+    main{
+        width:90%;
+        margin-left: 10px;
+        margin-right: 05px;
+    }
+
+    header {
+        flex-direction: rows;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 55px;
+        ul {
+            
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            li {
+                margin-bottom: 10px;
+                background: #eebe64;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+
+            li a:hover {
+                text-decoration: $subrayado;
+                background-color: hwb(160 28% 29%);
+              
+            }
+        }
+
+        ul.show {
+            display: flex;
+        }
+    }
+    .tituloTarjetaIndex{
+        font-weight:0.5rem;
+    }
+.contenedor_index_ad {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        " info info"
+        " info info"
+        " ad ad"
+        " ad ad";
+    padding: 20px; 
+    background-color: $color-fondo; 
+    }
+    footer{
+        width:90%;
+        margin-left: 10px;
+        margin-right: 05px;
+    }
+
+}
+@media only screen and (max-width: 951px) {
+    .contenedor_tarjetas {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .img_tar{
+        width: 80%;
+    }
+}
+
+
+// Dispositivos medios
+@media (min-width:600px) and (max-width:950px){
+   
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+
+    /*  videos uno debajo del otro. */
+    .seccion_videos{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* Seccion inicio presentacion*/
+
+    .noticias p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        word-wrap: break-word; 
+   
+    }
+    .noticias{
+        overflow: hidden;
+    }
+
+    nav ul li a:hover{
+        cursor: pointer;
+    }
+    
+}
+
+
+
+
+
+// Dispositivos Chicos
+@media (min-width: 300px) and (max-width: 599px) {
+
+    header {
+        padding: 45px;
+        margin: 10px 40px;
+        flex-direction: column;
+      
+    }
+    .logo{
+        flex-direction:column;
+        margin: 0px 40px;
+        }
+      nav ul{
+        justify-items: center;
+    
+    }
+
+    .info>h2, .noticias, .noticias_hijas >h3, .noticias_hijas >p,.datos_contacto {
+        overflow: visible;
+        text-overflow: initial;
+        white-space: normal;
+        margin-bottom: 20px;
+        font-size: 90%;
+        
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .derechos_reservados{
+        text-align: center;
+    }
+
+    .seccion_videos{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.img_tar{
+   margin-right: 20px;
+}
+
+}
+

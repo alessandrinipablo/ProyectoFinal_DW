@@ -1,0 +1,17 @@
+/*  Mixin*/
+
+// a la etiquetas anclas
+
+@mixin anclas {
+    text-decoration: none;
+    color: $color-botones;
+    font-size: 1.2rem;
+}
+
+
+// en la pagina index donde me organiza igual las ultimas secciones.
+@mixin imagen_videos_mapas{
+    padding: 25px;
+    margin: 25px;
+    background-color: $color-fondo;
+}

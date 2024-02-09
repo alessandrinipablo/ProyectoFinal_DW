@@ -1,0 +1,110 @@
+/* Estilos para pagina Analisis de datos */
+
+/*  contenedor de formulario que activa la tabla (activaria) */
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    margin-right: 20px;
+  }
+  
+  /* contenedor donde esta la tabla */
+  
+  .tablas {
+    border: 1px solid rgb(114, 113, 113, 0.2);
+    width: auto;
+  }
+  
+  /*  estilos a la tabla */
+  
+  table {
+    color: #272626;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid;
+  }
+  
+  thead {
+    background-color: #969393;
+  }
+  
+  th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  td {
+    padding: 15px;
+    border-bottom: solid 1px;
+    text-align: center;
+  }
+  
+  tbody tr {
+    cursor: pointer;
+  
+    &:hover {
+      background: rgb(211, 209, 209);
+    }
+  }
+  
+  /*  activo flex, entre el formulario y la tabla de la pagina analisis de datos */
+  
+  #analisis_datos {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 25px;
+  }
+  
+  .formulario, .tablas {
+    width: 50%;
+    padding: 0px;
+  }
+  
+  .formulario {
+    background: url("../img/analisis_datos.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .analisis {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f5f1f1;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .h2_formulario {
+    background-color: #525050;
+  }
+  
+  .analisis {
+    label, select, input {
+      width: 100%;
+    }
+  }
+  
+  .conclusion {
+    border: 1px solid;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    line-height: 2;
+    padding: 20px;
+    margin: 50px;
+    h3{
+      color:$color-fuentes;
+      text-decoration: $subrayado;
+      margin: 15px 0px 25px 0px;
+    }
+    p{
+      font-weight: bold;
+    }
+  }
+  

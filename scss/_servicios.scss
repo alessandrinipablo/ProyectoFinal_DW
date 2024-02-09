@@ -1,0 +1,119 @@
+/*  Estilos servicios */
+
+.servicios_ofrecidos {
+    font-weight: bold;
+    padding: 25px 25px;
+  
+    > {
+      h2 {
+        color: $color-fuentes;
+        text-align: center;
+        margin: 10px 20px;
+        text-decoration: $subrayado;
+      }
+  
+      p {
+        padding-top: 20px;
+      }
+    }
+  }
+  
+  .listas_servicios {
+    padding: 20px 40px;
+    line-height: 2.5;
+  }
+  
+  .img_tar {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .contenedor_tarjetas {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+  }
+  
+  .tarjetas_servicios {
+    width: 100%;
+    margin: 20px;
+    border-radius: 06px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  
+    &:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%);
+    }
+  
+    .contenido {
+      padding: 15px;
+      text-align: center;
+  
+      p {
+        line-height: 1.5;
+        color: #6a6a6a;
+      }
+  
+      h3 {
+        font-weight: 400;
+        margin-bottom: 15px;
+        text-decoration: $subrayado;
+     
+      }
+  
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #2fb4cc;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+  
+        &:hover {
+          background: #2fb4cc;
+          color: #FFf;
+        }
+      }
+    }
+  }
+  
+  .datos_contacto {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(155, 154, 154);
+  
+    > {
+      h3 {
+        max-width: 100%;
+        word-wrap: break-word; 
+        margin: 0;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        color: $color-fuentes;
+        text-decoration: $subrayado;
+      }
+  
+      p {
+        max-width: 100%;
+        word-wrap: break-word; 
+        color: $color-fuentes;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5;
+      }
+    }
+  }
+  
